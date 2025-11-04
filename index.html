@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Areeba Arshad — UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Areeba<span>Arshad</span></div>
+    <input id="menu-toggle" type="checkbox" />
+    <label for="menu-toggle" class="menu-icon">☰</label>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#case">Case Study</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <h1>Hi, I’m <span>Areeba Arshad</span></h1>
+        <p class="lead">UI/UX designer crafting meaningful interfaces — visual clarity, thoughtful UX, and polished interactions.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <!-- Local image with JS/SVG fallback if missing -->
+        <img src="images/hero.jpg" alt="Designer workspace — hero" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<?xml version=&quot;1.0&quot;?><svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;900&quot; height=&quot;600&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%230f0f12&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; fill=&quot;%23a7a7b0&quot; font-size=&quot;20&quot; font-family=&quot;Arial&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>Hero image missing — add images/hero.jpg</text></svg>';">
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <p class="section-desc">High-fidelity mockups and product-focused UI work.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/project-fintech.jpg" alt="Fintech dashboard" onerror="this.onerror=null;this.style.opacity=.4;">
+          <div class="project-info">
+            <h3>Fintech Dashboard</h3>
+            <p>Data-first UI with improved hierarchy and onboarding flows.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/project-health.jpg" alt="Health app" onerror="this.onerror=null;this.style.opacity=.4;">
+          <div class="project-info">
+            <h3>Health App Redesign</h3>
+            <p>Accessible mobile experience with clear micro-interactions.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/project-ecom.jpg" alt="E-commerce experience" onerror="this.onerror=null;this.style.opacity=.4;">
+          <div class="project-info">
+            <h3>E-commerce Experience</h3>
+            <p>Refined product discovery and checkout flow to reduce friction.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section id="case" class="case-study container">
+      <h2>Case Study · Voyage (Travel)</h2>
+
+      <div class="case-body">
+        <div class="case-media">
+          <img src="images/case-travel.jpg" alt="Travel app case mockup" onerror="this.onerror=null;this.style.opacity=.4;">
+        </div>
+
+        <div class="case-text">
+          <h3>Goal</h3>
+          <p>Create a travel booking flow that makes multi-stop planning fast and delightful.</p>
+          <h3>Process</h3>
+          <p>User research → wireframes → prototypes → testing → refinement.</p>
+          <h3>Outcome</h3>
+          <p>Prototype usability increased success rates by 35% in testing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <div class="about-left">
+        <img src="images/areeba-portrait.jpg" alt="Areeba portrait" class="portrait" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<?xml version=&quot;1.0&quot;?><svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;360&quot; height=&quot;360&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; rx=&quot;180&quot; fill=&quot;%238b5cff&quot;/></svg>';">
+      </div>
+      <div class="about-right">
+        <h2>About Me</h2>
+        <p>I’m <strong>Areeba Arshad</strong>, a UI/UX designer focused on design systems, accessibility and elegant product experiences. I work with teams to translate research into delightful interfaces.</p>
+
+        <h4>Skills</h4>
+        <ul class="skills">
+          <li>Figma, Prototyping & Usability testing</li>
+          <li>Design systems & responsive UI</li>
+          <li>Accessibility & micro-interactions</li>
+        </ul>
+
+        <div class="social-cta">
+          <a class="link" href="#" aria-label="Behance">Behance</a>
+          <a class="link" href="#" aria-label="Dribbble">Dribbble</a>
+          <a class="link" href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Let’s work together</h2>
+      <p class="section-desc">Open for freelance and collaboration. Send a short message — I usually reply within a day.</p>
+
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <input name="name" type="text" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Areeba Arshad — UI/UX Designer</p>
+      <small class="small">Built with HTML & CSS • No external libs</small>
+    </div>
+  </footer>
+
+  <script>
+    // set current year and close mobile menu on link click
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click', ()=> {
+      const t = document.getElementById('menu-toggle'); if(t) t.checked = false;
+    }));
+  </script>
+</body>
+</html>
